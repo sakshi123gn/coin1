@@ -18,11 +18,11 @@ const App = () => {
   const currentPath = window.location.pathname;
   let navbarComponent;
 
-  if (currentPath === '/') {
+  if (currentPath === '/' || currentPath === '/crypto' || currentPath === '/support' || currentPath === '/services' || currentPath === '/login' || currentPath === '/signup') {
     navbarComponent = <Navbar />;
-  } else if (currentPath === '/dashboard') {
+  } else {
     navbarComponent = <Navbar1 />;
-  } 
+  }
   return (
         <>
         <Router>
@@ -32,7 +32,7 @@ const App = () => {
         {navbarComponent}
             
 
-          <div className='h-16' ></div>
+          {/* <div className='h-16' ></div> */}
               <Routes>
                    <Route path="/" element={<Home /> } />
                    <Route path="/crypto" element={<Crypto />} />

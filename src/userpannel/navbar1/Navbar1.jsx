@@ -29,7 +29,7 @@ const Navbar = () => {
               to="/"
               className="text-2xl font-bold text-white hover:text-gray-300"
             >
-              MyBrand
+              Crypto
             </Link>
           </div>
 
